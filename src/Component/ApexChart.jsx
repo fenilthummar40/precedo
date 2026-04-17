@@ -1,104 +1,112 @@
-import React from "react";
+import React, {useState} from "react";
 import Chart from "react-apexcharts";
 
 function ApexChart() {
+    const [range, setRange] = useState("Last Year");
+
     const options = {
         chart: {
-            height: 350,
             type: "line",
-            dropShadow: {
-                enabled: true,
-                color: "#fff",
-                top: 18,
-                left: 7,
-                blur: 10,
-                opacity: 0.5,
-            },
-            zoom: {
-                enabled: false,
-            },
-            toolbar: {
-                show: false,
-            },
+            height: 450,
+            toolbar: {show: false},
+            zoom: {enabled: false},
+            foreColor: "#9ca3af",
         },
-        colors: ["#77B6EA", "#545454"],
-        dataLabels: {
-            enabled: true,
-        },
+
+        colors: ["#00e676", "#ff5252"],
+
         stroke: {
             curve: "smooth",
+            width: 3,
         },
+
+        dataLabels: {
+            enabled: false,
+        },
+
+        grid: {
+            borderColor: "#1f2937",
+            strokeDashArray: 4,
+        },
+
+        markers: {
+            size: 0,
+            hover: {size: 6},
+        },
+
+        xaxis: {
+            categories: [
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+            ],
+            labels: {
+                style: {colors: "#9ca3af"},
+            },
+        },
+
+        yaxis: {
+            min: -10,
+            max: 120,
+            tickAmount: 5,
+            labels: {
+                formatter: (val) => `${val}%`,
+                style: {colors: "#9ca3af"},
+            },
+        },
+
+        legend: {
+            position: "top",
+            horizontalAlign: "left",
+            labels: {colors: "#e5e7eb"},
+        },
+
+        tooltip: {
+            theme: "dark",
+            y: {
+                formatter: (val) => `${val.toFixed(2)}%`,
+            },
+        },
+
         title: {
             text: "Historical Prediction Performance Vs. S&P 500",
             align: "left",
             style: {
                 color: "#ffffff",
+                fontSize: "18px",
+                fontWeight: 600,
             },
-        },
-        grid: {
-            borderColor: "#1e1b4b",
-        },
-        markers: {
-            size: 4,
-        },
-        xaxis: {
-            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-            title: {
-                text: "Month",
-                style: {
-                    color: "#ffffff",
-                },
-            },
-            labels: {
-                style: {
-                    colors: "#ffffff",
-                },
-            },
-        },
-        yaxis: {
-            title: {
-                text: "Temperature",
-                style: {
-                    color: "#ffffff",
-                },
-            },
-            labels: {
-                style: {
-                    colors: "#ffffff",
-                },
-            },
-            min: 5,
-            max: 40,
-        },
-        legend: {
-            position: "top",
-            horizontalAlign: "right",
-            floating: true,
-            offsetY: -25,
-            offsetX: -5,
-            labels: {
-                colors: "#ffffff",
-            },
-        },
-        tooltip: {
-            theme: "dark"
         },
     };
 
     const series = [
         {
-            name: "High - 2013",
-            data: [28, 29, 33, 36, 32, 32, 33],
+            name: "Historical Prediction Performance",
+            data: [15, 25, 30, 28, 40, 55, 70, 60, 65, 45, 60, 50],
         },
         {
-            name: "Low - 2013",
-            data: [12, 11, 14, 18, 17, 13, 13],
+            name: "S&P 500",
+            data: [30, 20, 35, 32, 60, 55, 80, 90, 75, 85, 70, 80],
         },
     ];
 
     return (
-        <div className="bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] p-5 rounded-xl shadow-md h-full">
-            <Chart options={options} series={series} type="line" height={450}/>
+        <div className="bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] p-6 rounded-2xl shadow-lg">
+            <div className="flex justify-between items-center mb-4">
+                <h2 className="text-white text-lg font-semibold">
+                    Historical Prediction Performance Vs. S&P 500
+                </h2>
+                <select
+                    value={range}
+                    onChange={(e) => setRange(e.target.value)}
+                    className="text-gray-300 border border-gray-600 rounded-lg px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option>Last Year</option>
+                    <option>Last 6 Months</option>
+                    <option>Last 3 Months</option>
+                    <option>Last Month</option>
+                </select>
+            </div>
+
+            <Chart options={options} series={series} type="line" height={380}/>
         </div>
     );
 }
