@@ -5,8 +5,16 @@ import {IconMenu} from "@tabler/icons-react";
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const sectionStyle = {
+        backgroundImage: `
+        url(${assets.bg_image})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    }
+
     return (
-        <header className="w-full">
+        <header className="w-full" style={sectionStyle}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
 
                 <div className="flex items-center">

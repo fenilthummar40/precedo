@@ -1,3 +1,6 @@
+import bg_image from './bg-image.png';
+import work_bg_image from './work-bg-image.png';
+import chart_bg_image from './chart-bg-image.png';
 import logo from './logo.png';
 import image_1 from './image-1.jpg';
 import image_2 from './image-2.jpg';
@@ -34,6 +37,9 @@ import image_32 from './image-32.png';
 
 
 export const assets = {
+    bg_image,
+    work_bg_image,
+    chart_bg_image,
     logo,
     image_1,
     image_2,

@@ -3,6 +3,14 @@ import {IconVideo} from "@tabler/icons-react";
 
 function Hero() {
 
+    const sectionStyle = {
+        backgroundImage: `
+        url(${assets.work_bg_image})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    }
+
     return (
         <>
             <section className='py-10'>
@@ -27,7 +35,7 @@ function Hero() {
                             <div className='relative'>
                                 <img className='w-full rounded-lg' src={assets.image_5} alt=""/>
                                 <div
-                                    className='absolute bottom-0 right-0 border rounded-tl-lg rounded-br-lg bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] p-4 flex items-center justify-between gap-5'>
+                                    className='absolute bottom-0 right-0 rounded-tl-lg rounded-br-lg shadow-xl p-4 flex items-center justify-between gap-5 z-10' style={sectionStyle}>
                                     <div>
                                         <span
                                             className='border-2 border-pink-500 flex items-center justify-center rounded-full p-4'>
@@ -42,15 +50,15 @@ function Hero() {
                             </div>
 
                             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-4'>
-                                <div className='flex items-center flex-col justify-center p-5 bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>$34M</h1>
                                     <p className='text-gray-500 text-sm line-clamp-1'>Total Invested</p>
                                 </div>
-                                <div className='flex items-center flex-col justify-center p-5 bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>6K</h1>
                                     <p className='text-gray-500 text-sm line-clamp-1'>Community Members</p>
                                 </div>
-                                <div className='flex items-center flex-col justify-center p-5 bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>$300M</h1>
                                     <p className='text-gray-500 text-sm line-clamp-1'>Trading Volume</p>
                                 </div>
