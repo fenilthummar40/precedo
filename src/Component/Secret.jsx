@@ -24,7 +24,7 @@ function Secret() {
                         Hello Precedo Score
                     </p>
 
-                    <Title text1={`Your (Not so) Secret Sauce to Success`} />
+                    <Title text1={`Your (Not so) Secret Sauce to Success`}/>
 
                     <p className='text-white text-sm lg:text-lg'>
                         The Precedo AI algorithm uses intricate weighting and multifaceted factors like profitability,
@@ -35,29 +35,38 @@ function Secret() {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-2 mt-16 items-center'>
                     <div className='flex flex-col items-end'>
                         <div className='flex items-center justify-end relative'>
-                            <LeftItem icon={<IconGauge />} text="Risk" />
+                            <LeftItem icon={<IconGauge/>} text="Risk"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+25</span>
                             <img className='absolute -right-34 top-6 hidden lg:block' src={assets.image_25} alt=""/>
                         </div>
-                       <div className='flex items-center justify-end relative'>
-                           <LeftItem icon={<IconTrophy />} text="Profits" />
-                           <img className='absolute -right-36 top-6 hidden lg:block' src={assets.image_27} alt=""/>
-                       </div>
                         <div className='flex items-center justify-end relative'>
-                            <LeftItem icon={<IconChartBar />} text="Beats the Market" />
+                            <LeftItem icon={<IconTrophy/>} text="Profits"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+30</span>
+                            <img className='absolute -right-36 top-6 hidden lg:block' src={assets.image_27} alt=""/>
+                        </div>
+                        <div className='flex items-center justify-end relative'>
+                            <LeftItem icon={<IconChartBar/>} text="Beats the Market"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+12</span>
                             <img className='absolute -right-40 -top-2 hidden lg:block' src={assets.image_26} alt=""/>
                         </div>
                         <div className='flex items-center justify-end relative'>
-                            <LeftItem icon={<IconCalendar />} text="Days in Profit" />
+                            <LeftItem icon={<IconCalendar/>} text="Days in Profit"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+5</span>
                             <img className='absolute -right-40 -top-20 hidden lg:block' src={assets.image_28} alt=""/>
                         </div>
                     </div>
 
                     <div className='flex justify-center'>
                         <div className='hidden lg:block'>
-                            <div className='relative flex flex-col items-center justify-center bg-purple-600 rounded-full w-40 h-40 text-white shadow-lg'>
+                            <div
+                                className='relative flex flex-col items-center justify-center bg-purple-600 rounded-full w-40 h-40 text-white shadow-lg'>
                                 <span className='text-lg'>Precedo</span>
                                 <span className='flex items-center gap-2 text-2xl font-bold'>
-                                <IconMusic /> 100
+                                <IconMusic/> 100
                             </span>
                             </div>
                         </div>
@@ -66,19 +75,27 @@ function Secret() {
                     <div className='flex flex-col items-start'>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-36 top-5 hidden lg:block' src={assets.image_29} alt=""/>
-                            <RightItem icon={<IconCurrencyDollar />} text="Assets" />
+                            <RightItem icon={<IconCurrencyDollar/>} text="Assets"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+18</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 top-5 hidden lg:block' src={assets.image_30} alt=""/>
-                            <RightItem icon={<IconWallet />} text="Timely Payouts" />
+                            <RightItem icon={<IconWallet/>} text="Timely Payouts"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+6</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 -top-2 hidden lg:block' src={assets.image_31} alt=""/>
-                            <RightItem icon={<IconTrendingUp />} text="Asset Growth" />
+                            <RightItem icon={<IconTrendingUp/>} text="Asset Growth"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+2</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 -top-20 hidden lg:block' src={assets.image_32} alt=""/>
-                            <RightItem icon={<IconBan />} text="Zero Leverage" />
+                            <RightItem icon={<IconBan/>} text="Zero Leverage"/>
+                            <span
+                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+6</span>
                         </div>
                     </div>
                 </div>

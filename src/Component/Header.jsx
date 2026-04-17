@@ -40,16 +40,16 @@ function Header() {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <button className="text-white hover:text-gray-300 md:text-xs lg:text-lg">Log in</button>
+                        <button className="text-white hover:text-gray-300 md:text-xs lg:text-lg cursor-pointer">Log in</button>
                         <button
-                            className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full md:text-xs lg:text-lg">
+                            className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full md:text-xs lg:text-lg cursor-pointer">
                             Sign Up
                         </button>
                     </div>
                 </div>
 
                 <button
-                    className="md:hidden text-white"
+                    className="md:hidden text-white cursor-pointer"
                     onClick={() => setMenuOpen(!menuOpen)}>
                     <IconMenu/>
                 </button>
@@ -64,8 +64,8 @@ function Header() {
                     </ul>
 
                     <div className="mt-6 flex flex-col gap-3">
-                        <button className="text-white text-left">Log in</button>
-                        <button className="bg-pink-500 text-white px-4 py-2 rounded-full">
+                        <button className="text-white text-left cursor-pointer">Log in</button>
+                        <button className="bg-pink-500 text-white px-4 py-2 rounded-full cursor-pointer">
                             Sign Up
                         </button>
                     </div>

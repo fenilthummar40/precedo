@@ -18,7 +18,7 @@ function Hero() {
                                 statistically likely to outperform Wall Street (because they haven’t discovered them
                                 yet)</p>
                             <button
-                                className='px-5 py-3 bg-gradient-to-r from-yellow-400 to-pink-500 text-white rounded-full mt-5 font-semibold text-lg'>Make
+                                className='px-5 py-3 bg-gradient-to-r from-yellow-400 to-pink-500 text-white rounded-full mt-5 font-semibold text-lg cursor-pointer'>Make
                                 Money Now
                             </button>
                         </div>
