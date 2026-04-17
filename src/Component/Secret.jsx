@@ -26,7 +26,7 @@ function Secret() {
 
                     <Title text1={`Your (Not so) Secret Sauce to Success`} />
 
-                    <p className='text-white text-sm lg:text-lg mt-3'>
+                    <p className='text-white text-sm lg:text-lg'>
                         The Precedo AI algorithm uses intricate weighting and multifaceted factors like profitability,
                         risk, and consistency to identify top traders.
                     </p>
