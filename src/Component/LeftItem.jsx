@@ -3,7 +3,7 @@ function LeftItem({icon, text}) {
     return (
         <>
             <div className="relative flex items-center justify-center md:justify-end w-full mb-8">
-                <div className="absolute right-0 top-1/2 w-24 h-[2px] bg-purple-500 translate-x-full hidden md:block"></div>
+                {/*<div className="absolute right-0 top-1/2 w-24 h-[2px] bg-purple-500 translate-x-full hidden md:block"></div>*/}
                 <div
                     className="absolute right-0 top-1/2 w-3 h-3 bg-pink-500 rounded-full translate-x-[150%] -translate-y-1/2 hidden md:block"></div>
                 <div

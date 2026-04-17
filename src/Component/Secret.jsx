@@ -12,6 +12,7 @@ import {
 } from "@tabler/icons-react";
 import LeftItem from "./LeftItem.jsx";
 import RightItem from "./RightItem.jsx";
+import {assets} from "../assets/assets.js";
 
 function Secret() {
     return (
@@ -31,12 +32,24 @@ function Secret() {
                     </p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-2 mt-16 items-center'>
                     <div className='flex flex-col items-end'>
-                        <LeftItem icon={<IconGauge />} text="Risk" />
-                        <LeftItem icon={<IconTrophy />} text="Profits" />
-                        <LeftItem icon={<IconChartBar />} text="Beats the Market" />
-                        <LeftItem icon={<IconCalendar />} text="Days in Profit" />
+                        <div className='flex items-center justify-end relative'>
+                            <LeftItem icon={<IconGauge />} text="Risk" />
+                            <img className='absolute -right-34 top-6 hidden lg:block' src={assets.image_25} alt=""/>
+                        </div>
+                       <div className='flex items-center justify-end relative'>
+                           <LeftItem icon={<IconTrophy />} text="Profits" />
+                           <img className='absolute -right-36 top-6 hidden lg:block' src={assets.image_27} alt=""/>
+                       </div>
+                        <div className='flex items-center justify-end relative'>
+                            <LeftItem icon={<IconChartBar />} text="Beats the Market" />
+                            <img className='absolute -right-40 -top-2 hidden lg:block' src={assets.image_26} alt=""/>
+                        </div>
+                        <div className='flex items-center justify-end relative'>
+                            <LeftItem icon={<IconCalendar />} text="Days in Profit" />
+                            <img className='absolute -right-40 -top-20 hidden lg:block' src={assets.image_28} alt=""/>
+                        </div>
                     </div>
 
                     <div className='flex justify-center'>
@@ -51,10 +64,22 @@ function Secret() {
                     </div>
 
                     <div className='flex flex-col items-start'>
-                        <RightItem icon={<IconCurrencyDollar />} text="Assets" />
-                        <RightItem icon={<IconWallet />} text="Timely Payouts" />
-                        <RightItem icon={<IconTrendingUp />} text="Asset Growth" />
-                        <RightItem icon={<IconBan />} text="Zero Leverage" />
+                        <div className='flex items-center justify-end relative'>
+                            <img className='absolute -left-36 top-5 hidden lg:block' src={assets.image_29} alt=""/>
+                            <RightItem icon={<IconCurrencyDollar />} text="Assets" />
+                        </div>
+                        <div className='flex items-center justify-end relative'>
+                            <img className='absolute -left-34 top-5 hidden lg:block' src={assets.image_30} alt=""/>
+                            <RightItem icon={<IconWallet />} text="Timely Payouts" />
+                        </div>
+                        <div className='flex items-center justify-end relative'>
+                            <img className='absolute -left-34 -top-2 hidden lg:block' src={assets.image_31} alt=""/>
+                            <RightItem icon={<IconTrendingUp />} text="Asset Growth" />
+                        </div>
+                        <div className='flex items-center justify-end relative'>
+                            <img className='absolute -left-34 -top-20 hidden lg:block' src={assets.image_32} alt=""/>
+                            <RightItem icon={<IconBan />} text="Zero Leverage" />
+                        </div>
                     </div>
                 </div>
             </div>

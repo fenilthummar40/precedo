@@ -23,6 +23,14 @@ import image_21 from './image-21.png';
 import image_22 from './image-22.png';
 import image_23 from './image-23.png';
 import image_24 from './image-24.png';
+import image_25 from './image-25.png';
+import image_26 from './image-26.png';
+import image_27 from './image-27.png';
+import image_28 from './image-28.png';
+import image_29 from './image-29.png';
+import image_30 from './image-30.png';
+import image_31 from './image-31.png';
+import image_32 from './image-32.png';
 
 
 export const assets = {
@@ -51,4 +59,12 @@ export const assets = {
     image_22,
     image_23,
     image_24,
+    image_25,
+    image_26,
+    image_27,
+    image_28,
+    image_29,
+    image_30,
+    image_31,
+    image_32,
 }
