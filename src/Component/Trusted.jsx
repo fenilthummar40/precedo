@@ -13,25 +13,25 @@ const testimonials = [
         name: "Savannah Nguyen",
         role: "President of Sales",
         image: assets.image_17,
-        text: "“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”"
+        text: "Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies."
     },
     {
         name: "Albert Flores",
         role: "Nursing Assistant",
         image: assets.image_17,
-        text: "“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”...“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”"
+        text: "Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”...“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies."
     },
     {
         name: "Jenny Wilson",
         role: "Web Designer",
         image: assets.image_17,
-        text: "“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”..“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”"
+        text: "Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”..“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies."
     },
     {
         name: "Leslie Alexander",
         role: "Medical Assistant",
         image: assets.image_17,
-        text: "“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.” metus tempor nibh..“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.”"
+        text: "Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies.” metus tempor nibh..“Morbi consectetur elementum purus mattis cursus purus vel metus iaculis sagittis. Vestibulum molestie bibendum turpis luctus sem lacinia quis. Quisque amet velit sit amet dui hendrerit ultricies a id ipsum Mauris sit amet lacinia est, vitae tristique metus tempor nibh ultricies."
     }
 ];
 
@@ -51,7 +51,7 @@ function Trusted() {
                 {testimonials.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div
-                            className="flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-[#0f172a] to-[#1e293b] p-10">
+                            className="flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-[#0f172a] to-[#1e293b] p-10 rounded-lg rounded-tr-[80px]">
                             <div className='md:w-2/5 w-full flex items-center justify-center'>
                                 <img src={item.image}
                                      className="object-cover rounded-xl"/>
@@ -62,9 +62,14 @@ function Trusted() {
 
                                 <hr className='border-gray-500'/>
 
-                                <div className='mt-5'>
-                                    <h3 className="text-xl font-semibold">{item.name}</h3>
-                                    <p className="text-gray-400 text-sm">{item.role}</p>
+                                <div className='mt-5 flex items-center justify-between'>
+                                    <div>
+                                        <h3 className="text-xl font-semibold">{item.name}</h3>
+                                        <p className="text-gray-400 text-sm">{item.role}</p>
+                                    </div>
+                                    <div>
+                                        <img src={assets.image_33} alt=""/>
+                                    </div>
                                 </div>
                             </div>
                         </div>

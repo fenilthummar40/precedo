@@ -3,7 +3,7 @@ import {
     IconChartBar,
     IconChartPie,
     IconCircleOff,
-    IconCurrencyDollar,
+    IconMoneybag,
     IconTrophy,
     IconWallet
 } from "@tabler/icons-react";
@@ -12,14 +12,14 @@ function Precedo() {
 
     const PrecedoData = [
         {
-            icon: <IconCurrencyDollar/>,
+            icon: <IconMoneybag/>,
             title: 'PROVEN MODEL RELIABILITY',
             description: "Precedo’s AI model undergoes rigorous back-testing, simulating past market scenarios to ensure consistent performance."
         },
         {
             icon: <IconChartPie/>,
             title: 'PERSONALIZED PORTFOLIO ANALYSIS',
-            description: "Precedo AI customizes analysis to match your portfolio and goals, ensuring tailored insights for your investments."
+            description: "Precedo's AI customizes analysis to match your portfolio and goals, ensuring tailored insights for your investments."
         },
         {
             icon: <IconWallet/>,
@@ -34,7 +34,7 @@ function Precedo() {
         {
             icon: <IconCircleOff/>,
             title: 'RISK MANAGEMENT FOCUS',
-            description: "Precedo highlights both potential gains and risks, helping you balance your portfolio for growth and stability."
+            description: "Precedo's highlights both potential gains and risks, helping you balance your portfolio for growth and stability."
         },
         {
             icon: <IconTrophy/>,
@@ -49,12 +49,12 @@ function Precedo() {
                 <Title text1="Why Trust Precedo?"/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {PrecedoData.map((item, index) => (
-                        <div key={index}
-                             className="group p-[1.5px] rounded-xl rounded-tr-[80px] bg-transparent hover:bg-gradient-to-r hover:from-yellow-400 hover:to-pink-500 transition duration-300">
+                        <div
+                            className="group p-[1.5px] rounded-xl rounded-tr-[80px] border border-gray-700 hover:border-pink-500">
                             <div
-                                className="h-full border border-gray-700 rounded-xl rounded-tr-[80px] p-6 bg-[#0f172a] flex flex-col gap-4 text-center transition">
+                                className="h-full rounded-xl rounded-tr-[80px] p-6 flex flex-col gap-4 text-center border border-transparent">
                                 <div
-                                    className="text-pink-500 flex justify-center group-hover:text-white transition">{item.icon}</div>
+                                    className="text-pink-500 flex justify-center group-hover:text-purple-500 transition">{item.icon}</div>
                                 <h3 className="text-white font-semibold text-lg">{item.title}</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
                             </div>

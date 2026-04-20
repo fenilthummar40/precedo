@@ -43,7 +43,7 @@ function Frequently() {
                             <p className='text-gray-500 font-normal text-sm lg:text-lg mt-2 line-clamp-2'>If you haven't found the answer
                                 you're <br/> looking for, we're here to help!</p>
                             <button type='submit'
-                                    className="bg-gradient-to-r from-yellow-400 to-pink-500 text-white px-5 py-2 rounded-full cursor-pointer mt-8">Contact
+                                    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-5 py-2 rounded-full cursor-pointer mt-8">Contact
                                 Us
                             </button>
 
@@ -55,10 +55,10 @@ function Frequently() {
                             <div className=" space-y-4 p-4">
                                 {faqs.map((faq, index) => (
                                     <div key={index}
-                                         className={`rounded-xl border transition-all duration-300 ${
+                                         className={`rounded-xl rounded-tr-4xl border transition-all duration-300 ${
                                              openIndex === index
-                                                 ? "border-pink-500 bg-gradient-to-r from-[#0f172a] to-[#1e293b]"
-                                                 : "border-gray-700 bg-[#0f172a]"
+                                                 ? "border-pink-500"
+                                                 : "border-gray-700"
                                          }`}>
                                         <button onClick={() => toggle(index)}
                                                 className="w-full flex justify-between items-center p-4 text-left">

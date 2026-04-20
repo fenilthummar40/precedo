@@ -24,7 +24,7 @@ function Chart() {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full lg:w-3/5 bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] h-full rounded-lg'>
+                        <div className='w-full lg:w-3/5 h-full rounded-lg'>
                         <ApexChart/>
                         </div>
                     </div>

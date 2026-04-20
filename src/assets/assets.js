@@ -34,6 +34,7 @@ import image_29 from './image-29.png';
 import image_30 from './image-30.png';
 import image_31 from './image-31.png';
 import image_32 from './image-32.png';
+import image_33 from './image-33.png';
 
 
 export const assets = {
@@ -73,4 +74,5 @@ export const assets = {
     image_30,
     image_31,
     image_32,
+    image_33,
 }

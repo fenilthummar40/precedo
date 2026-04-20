@@ -50,7 +50,7 @@ function Header() {
                     <div className="flex items-center gap-4">
                         <button className="text-white hover:text-gray-300 md:text-xs lg:text-lg cursor-pointer">Log in</button>
                         <button
-                            className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full md:text-xs lg:text-lg cursor-pointer">
+                            className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-5 py-2 rounded-full md:text-xs lg:text-lg cursor-pointer">
                             Sign Up
                         </button>
                     </div>

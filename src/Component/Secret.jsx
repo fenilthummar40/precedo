@@ -33,34 +33,34 @@ function Secret() {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-2 mt-16 items-center'>
-                    <div className='flex flex-col items-end'>
+                    <div className='flex flex-col items-center sm:items-end'>
                         <div className='flex items-center justify-end relative'>
                             <LeftItem icon={<IconGauge/>} text="Risk"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+25</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+25</span>
                             <img className='absolute -right-34 top-6 hidden lg:block' src={assets.image_25} alt=""/>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <LeftItem icon={<IconTrophy/>} text="Profits"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+30</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+30</span>
                             <img className='absolute -right-36 top-6 hidden lg:block' src={assets.image_27} alt=""/>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <LeftItem icon={<IconChartBar/>} text="Beats the Market"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+12</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+12</span>
                             <img className='absolute -right-40 -top-2 hidden lg:block' src={assets.image_26} alt=""/>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <LeftItem icon={<IconCalendar/>} text="Days in Profit"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+5</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+5</span>
                             <img className='absolute -right-40 -top-20 hidden lg:block' src={assets.image_28} alt=""/>
                         </div>
                     </div>
 
-                    <div className='flex justify-center'>
+                    <div className='flex items-center justify-center'>
                         <div className='hidden lg:block'>
                             <div
                                 className='relative flex flex-col items-center justify-center bg-purple-600 rounded-full w-40 h-40 text-white shadow-lg'>
@@ -72,30 +72,30 @@ function Secret() {
                         </div>
                     </div>
 
-                    <div className='flex flex-col items-start'>
+                    <div className='flex flex-col items-center sm:items-start'>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-36 top-5 hidden lg:block' src={assets.image_29} alt=""/>
                             <RightItem icon={<IconCurrencyDollar/>} text="Assets"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+18</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+18</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 top-5 hidden lg:block' src={assets.image_30} alt=""/>
                             <RightItem icon={<IconWallet/>} text="Timely Payouts"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+6</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+6</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 -top-2 hidden lg:block' src={assets.image_31} alt=""/>
                             <RightItem icon={<IconTrendingUp/>} text="Asset Growth"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+2</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+2</span>
                         </div>
                         <div className='flex items-center justify-end relative'>
                             <img className='absolute -left-34 -top-20 hidden lg:block' src={assets.image_32} alt=""/>
                             <RightItem icon={<IconBan/>} text="Zero Leverage"/>
                             <span
-                                className='absolute top-0 right-1 z-10 text-black border border-gray-600 bg-green-200 rounded-full w-6 h-6 flex items-center justify-center text-xs'>+6</span>
+                                className='absolute top-0 right-1 z-10 text-white border border-gray-600 bg-green-600 rounded-full w-5 h-5 flex items-center justify-center text-[10px]'>+6</span>
                         </div>
                     </div>
                 </div>
