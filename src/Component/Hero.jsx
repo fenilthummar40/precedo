@@ -1,5 +1,4 @@
 import {assets} from "../assets/assets.js";
-import {IconVideo} from "@tabler/icons-react";
 
 function Hero() {
 
@@ -13,7 +12,7 @@ function Hero() {
 
     return (
         <>
-            <section className='py-10'>
+            <section className='py-10 pt-30'>
                 <div className='max-w-7xl mx-auto px-5'>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='flex items-start flex-col justify-center'>
@@ -36,31 +35,33 @@ function Hero() {
                                 <img className='w-full rounded-lg' src={assets.image_5} alt=""/>
                                 <div
                                     className='absolute bottom-0 right-0 rounded-tl-lg rounded-br-lg shadow-xl p-4 flex items-center justify-between gap-5 z-10' style={sectionStyle}>
-                                    <div>
-                                        <span
-                                            className='border-2 border-pink-500 flex items-center justify-center rounded-full p-4'>
-                                                <IconVideo className='text-white'/>
-                                        </span>
+                                    <div className="flex items-center justify-center">
+                                        <div className="p-[4px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+
+                                            <div className=" bg-[#1E2D3B] rounded-full p-4 flex items-center justify-center">
+                                                <img src={assets.video} alt="play" className="w-6 h-6" />
+                                            </div>
+                                        </div>
                                     </div>
                                     <div>
-                                        <h1 className='text-white'>How It Works</h1>
-                                        <p className='text-gray-500'>Play Video</p>
+                                        <h1 className='text-white underline'>How It Works</h1>
+                                        <p className='text-gray-200'>Play Video</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-4'>
-                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-lg bg-white/10'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>$34M</h1>
-                                    <p className='text-gray-500 text-sm line-clamp-1'>Total Invested</p>
+                                    <p className='text-gray-200 text-lg line-clamp-1'>Total Invested</p>
                                 </div>
-                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-lg bg-white/10'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>6K</h1>
-                                    <p className='text-gray-500 text-sm line-clamp-1'>Community Members</p>
+                                    <p className='text-gray-200 text-lg line-clamp-1'>Community Members</p>
                                 </div>
-                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-b-lg'>
+                                <div className='flex items-center flex-col justify-center p-5 shadow-xl rounded-lg bg-white/10'>
                                     <h1 className='bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-2xl mb-1'>$300M</h1>
-                                    <p className='text-gray-500 text-sm line-clamp-1'>Trading Volume</p>
+                                    <p className='text-gray-200 text-lg line-clamp-1'>Trading Volume</p>
                                 </div>
                             </div>
 

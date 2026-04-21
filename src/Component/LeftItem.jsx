@@ -1,4 +1,4 @@
-function LeftItem({icon, text}) {
+function LeftItem({icon, text , sub1 , sub2 ,img}) {
 
     return (
         <>
@@ -7,7 +7,12 @@ function LeftItem({icon, text}) {
                 <div
                     className="absolute right-0 top-1/2 w-3 h-3 bg-pink-500 rounded-full translate-x-[150%] -translate-y-1/2 hidden md:block"></div>
                 <div
-                    className="z-10 flex items-center gap-3 bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] px-6 py-3 rounded-full text-white">
+                    className="z-10 flex items-center gap-3 bg-gradient-to-r from-[#0d1b2a] via-[#1b1f3b] to-[#3a1c71] px-6 py-3 rounded-full text-white">
+                    <div className='flex flex-col'>
+                        <span className='font-normal text-sm'>{sub1}</span>
+                        <span className='font-normal text-sm'>{sub2}</span>
+                    </div>
+                    {/*<img className='w-10 h-5' src={img} alt=""/>*/}
                     <span className="text-pink-500">{icon}</span>
                     {text}
                 </div>

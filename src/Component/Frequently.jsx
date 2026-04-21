@@ -40,10 +40,10 @@ function Frequently() {
                     <div className='flex items-center justify-between flex-col sm:flex-row gap-5'>
                         <div className='lg:w-1/4'>
                             <h1 className='font-semibold text-xl lg:text-4xl text-white'>Frequently Asked <br/> Questions</h1>
-                            <p className='text-gray-500 font-normal text-sm lg:text-lg mt-2 line-clamp-2'>If you haven't found the answer
+                            <p className='text-gray-200 font-normal text-sm lg:text-lg mt-2 line-clamp-2'>If you haven't found the answer
                                 you're <br/> looking for, we're here to help!</p>
                             <button type='submit'
-                                    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-5 py-2 rounded-full cursor-pointer mt-8">Contact
+                                    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full cursor-pointer mt-8">Contact
                                 Us
                             </button>
 

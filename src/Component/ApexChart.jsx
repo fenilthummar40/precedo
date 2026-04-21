@@ -91,16 +91,8 @@ function ApexChart() {
     ];
 
 
-    const sectionStyle = {
-        backgroundImage: `
-        url(${assets.bg_image})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-    }
-
     return (
-        <div className="p-6 rounded-2xl shadow-lg" style={sectionStyle}>
+        <div className="p-6 rounded-2xl shadow-lg bg-white/10">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-white text-lg font-semibold">
                     Historical Prediction Performance Vs. S&P 500

@@ -56,7 +56,7 @@ function Game() {
                     {GameData.map((item, index) => (
                         <div
                             key={index}
-                            className="border border-gray-700 rounded-lg rounded-tr-[80px] flex items-center justify-center flex-col gap-5 py-6 px-2">
+                            className="border border-white/10 rounded-lg rounded-tr-[80px] flex items-center justify-center flex-col gap-5 py-6 px-2 bg-white/10">
                             <span
                                 className='rounded-full bg-gradient-to-r from-[#0f172a] to-[#1e1b4b] flex items-center justify-center p-5 text-white font-semibold text-xl'>
                                 {item.number}

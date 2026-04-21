@@ -2,6 +2,9 @@ import bg_image from './bg-image.png';
 import work_bg_image from './work-bg-image.png';
 import chart_bg_image from './chart-bg-image.png';
 import logo from './logo.png';
+import video from './video.png';
+
+
 import image_1 from './image-1.jpg';
 import image_2 from './image-2.jpg';
 import image_3 from './image-3.jpg';
@@ -35,6 +38,9 @@ import image_30 from './image-30.png';
 import image_31 from './image-31.png';
 import image_32 from './image-32.png';
 import image_33 from './image-33.png';
+import image_34 from './image-34.png';
+import image_35 from './image-35.png';
+import image_36 from './image-36.png';
 
 
 export const assets = {
@@ -42,6 +48,8 @@ export const assets = {
     work_bg_image,
     chart_bg_image,
     logo,
+    video,
+
     image_1,
     image_2,
     image_3,
@@ -75,4 +83,7 @@ export const assets = {
     image_31,
     image_32,
     image_33,
+    image_34,
+    image_35,
+    image_36,
 }

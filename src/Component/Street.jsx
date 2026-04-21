@@ -34,19 +34,17 @@ function Street() {
             <div className='max-w-7xl m-auto px-5'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {StreetData.map((item, index) => (
-                        <div
-                            key={index}
-                            className="group p-[1.5px] rounded-tr-[80px] rounded-xl border border-gray-700 hover:border-pink-500 transition">
-                            <div
-                                className="rounded-tr-[80px] rounded-xl flex items-center justify-center flex-col gap-5 py-6">
-                                <h1 className="font-semibold text-2xl text-white">{item.title}</h1>
-                                <img src={item.image} alt={item.title}/>
-                                <h2 className="bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent text-3xl font-semibold">{item.sub1}</h2>
-                                <p className="text-gray-400 text-sm">{item.sub2}</p>
-                                <button type="button"
-                                        className="border border-pink-600 text-white px-6 py-3 rounded-full font-semibold text-sm cursor-pointer group-hover:bg-gradient-to-r from-purple-600 to-pink-500 group-hover:to-pink-500 group-hover:border-0 transition">
-                                    {item.button}</button>
+                        <div key={index}
+                             className="rounded-lg group rounded-tr-[80px] border border-white/10 bg-white/10 text-center group backdrop-blur-md p-4 hover:border-t-yellow-500 hover:border-l-amber-500 hover:border-r-pink-500 hover:border-b-pink-500">
+                            <h2 className="lg:text-2xl text-xl text-white font-semibold">{item.title}</h2>
+                            <img alt={item.title} className="mx-auto my-[25px]"
+                                 src={item.image}/>
+                            <div className="mb-10"><span
+                                className="bg-gradient-to-r inline-block mb-1 from-yellow-400 to-pink-400 bg-clip-text text-transparent text-3xl leading-[38px] font-semibold">{item.sub1}</span>
+                                <p className="font-normal text-sm text-gray-200">{item.sub2}</p>
                             </div>
+                            <span
+                                className="text-base inline-block text-white cursor-pointer py-3.5 px-5 border rounded-full transition-all duration-500 border-purple-700 group-hover:border-transparent group-hover:bg-gradient-to-r from-purple-600 to-pink-500">{item.button}</span>
                         </div>
                     ))}
                 </div>

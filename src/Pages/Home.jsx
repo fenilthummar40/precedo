@@ -22,7 +22,7 @@ function Home() {
     }
     return (
         <>
-            <div className="bg-gradient-to-r from-[#0f172a] to-[#1e1b4b]">
+            <div>
                 <div style={sectionStyle}>
                     <Header/>
                     <Hero/>
