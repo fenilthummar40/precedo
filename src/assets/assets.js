@@ -2,6 +2,7 @@ import bg_image from './bg-image.png';
 import work_bg_image from './work-bg-image.png';
 import chart_bg_image from './chart-bg-image.png';
 import logo from './logo.png';
+import logo_white from './logoWhite.svg';
 import video from './video.png';
 
 
@@ -48,6 +49,7 @@ export const assets = {
     work_bg_image,
     chart_bg_image,
     logo,
+    logo_white,
     video,
 
     image_1,

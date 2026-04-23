@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { assets } from "../assets/assets.js";
 import { IconMenu } from "@tabler/icons-react";
+import Signup from "./Signup.jsx";
+import Login from "./Login.jsx";
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -51,10 +53,8 @@ function Header() {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <button className="text-white hover:text-gray-300 md:text-xs lg:text-lg cursor-pointer">Log in</button>
-                        <button className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-5 py-2 rounded-full md:text-xs lg:text-lg cursor-pointer">
-                            Sign Up
-                        </button>
+                        <Login/>
+                        <Signup/>
                     </div>
                 </div>
 

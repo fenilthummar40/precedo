@@ -1,4 +1,5 @@
 import {assets} from "../assets/assets.js";
+import {Link} from "react-router-dom";
 
 function Hero() {
 
@@ -24,10 +25,11 @@ function Hero() {
                                 portfolio weak-points and hand pick stocks tailored to your investment goals that are
                                 statistically likely to outperform Wall Street (because they haven’t discovered them
                                 yet)</p>
-                            <button
-                                className='px-5 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full mt-5 font-semibold text-lg cursor-pointer'>Make
-                                Money Now
-                            </button>
+                            <Link to="/Terminal">
+                                <button type='submit' className='px-5 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full mt-5 font-semibold text-lg cursor-pointer'>
+                                    Make Money Now
+                                </button>
+                            </Link>
                         </div>
 
                         <div>
