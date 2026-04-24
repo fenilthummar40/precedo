@@ -7,13 +7,13 @@ function Terminal() {
         <>
             <section>
                 <div className='flex justify-between'>
-                    <div className='w-64'>
+                    <div className='flex'>
                         <Sidebar/>
                     </div>
-                    <div className='w-full'>
+                    <div className='flex-1'>
                         <Header/>
 
-                        <section className='bg-slate-800 h-[calc(100vh-60px)] relative'>
+                        <section className='bg-slate-900 h-[calc(100vh-60px)] relative'>
                             <div className='w-full h-full flex items-center justify-center'>
                                 <h1 className='text-4xl text-gray-600 font-semibold'>Precedo AI</h1>
                             </div>

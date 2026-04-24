@@ -1,5 +1,6 @@
 import {assets} from "../assets/assets.js";
 import {useState} from "react";
+import ContactModal from "../Modal/ContactModal.jsx";
 
 function Frequently() {
 
@@ -28,6 +29,7 @@ function Frequently() {
     ];
 
     const [openIndex, setOpenIndex] = useState(1);
+    const [contact, setContact] = useState(false);
 
     const toggle = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -42,7 +44,7 @@ function Frequently() {
                             <h1 className='font-semibold text-xl lg:text-4xl text-white'>Frequently Asked <br/> Questions</h1>
                             <p className='text-gray-200 font-normal text-sm lg:text-lg mt-2 line-clamp-2'>If you haven't found the answer
                                 you're <br/> looking for, we're here to help!</p>
-                            <button type='submit'
+                            <button type='submit' onClick={() => setContact(true)}
                                     className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full cursor-pointer mt-8">Contact
                                 Us
                             </button>
@@ -51,6 +53,7 @@ function Frequently() {
                                 <img src={assets.image_18} alt=""/>
                             </div>
                         </div>
+                        <ContactModal contact={contact} setContact={setContact}/>
                         <div className='lg:w-3/4'>
                             <div className=" space-y-4 p-4">
                                 {faqs.map((faq, index) => (

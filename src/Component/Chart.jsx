@@ -1,5 +1,5 @@
 import {assets} from "../assets/assets.js";
-import ApexChart from "./ApexChart.jsx";
+import HistoricalChart from "./Terminal/Chart/HistoricalChart.jsx";
 
 function Chart() {
 
@@ -25,7 +25,7 @@ function Chart() {
                             </div>
                         </div>
                         <div className='w-full lg:w-3/5 h-full rounded-lg'>
-                        <ApexChart/>
+                        <HistoricalChart/>
                         </div>
                     </div>
                 </div>

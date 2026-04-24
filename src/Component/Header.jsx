@@ -6,22 +6,9 @@ import Login from "./Login.jsx";
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     return (
-        <header
-            className={`w-full fixed top-0 left-0 z-50 transition-all duration-300
-            ${scrolled ? "bg-[#0B1A2A]/80 backdrop-blur-lg shadow-lg" : "bg-transparent"}`}
-        >
+        <header>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
 
                 <div className="flex items-center">
@@ -41,7 +28,7 @@ function Header() {
                     <div className="flex items-center">
                         <div className="flex -space-x-3">
                             {[assets.image_1, assets.image_2, assets.image_3, assets.image_4].map((img, i) => (
-                                <img key={i} className="w-8 h-8 rounded-full border-2 border-[#0f172a]" src={img} alt="" />
+                                <img key={i} className="w-8 h-8 rounded-full border-2 border-slate-700 cursor-pointer" src={img} alt="" />
                             ))}
                         </div>
 
@@ -74,11 +61,12 @@ function Header() {
                         <li><a className="text-gray-300" href="#">Why Precedo</a></li>
                     </ul>
 
-                    <div className="mt-6 flex flex-col gap-3">
-                        <button className="text-white text-left">Log in</button>
-                        <button className="bg-pink-500 text-white px-4 py-2 rounded-full">
-                            Sign Up
-                        </button>
+                    <div className="mt-5">
+                        <Login/>
+                    </div>
+
+                    <div className="mt-5">
+                        <Signup/>
                     </div>
                 </div>
             )}

@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import Chart from "react-apexcharts";
-import {assets} from "../assets/assets.js";
 
-function ApexChart() {
+function HistoricalChart() {
     const [range, setRange] = useState("Last Year");
 
     const options = {
@@ -113,4 +112,4 @@ function ApexChart() {
     );
 }
 
-export default ApexChart;
+export default HistoricalChart;

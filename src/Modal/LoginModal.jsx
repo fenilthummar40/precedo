@@ -1,4 +1,4 @@
-import {IconBrandGoogle, IconX} from "@tabler/icons-react";
+import {IconX} from "@tabler/icons-react";
 import {assets} from "../assets/assets.js";
 
 function LoginModal({login, setLogin}) {
@@ -13,7 +13,7 @@ function LoginModal({login, setLogin}) {
     }
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 flex items-center justify-center mx-2">
             <div className="absolute inset-0 bg-black/60" onClick={() => setLogin(false)}></div>
             <div className="relative rounded-xl shadow-lg w-full max-w-lg p-6 z-10" style={sectionStyle}>
                 <button onClick={() => setLogin(false)}
@@ -28,13 +28,13 @@ function LoginModal({login, setLogin}) {
                     <div className="flex flex-col">
                         <label className="text-sm text-white mb-1">Email :</label>
                         <input type="email" placeholder="Enter your email"
-                               className="px-4 py-2 rounded-lg bg-white/90 outline-none" required/>
+                               className="px-4 py-2 rounded-lg text-white border border-gray-600 outline-none" required/>
                     </div>
 
                     <div className="flex flex-col">
                         <label className="text-sm text-white mb-1">Password :</label>
                         <input type="password" placeholder="Enter your password"
-                               className="px-4 py-2 rounded-lg bg-white/90 outline-none" required/>
+                               className="px-4 py-2 rounded-lg text-white border border-gray-600 outline-none" required/>
                     </div>
 
                     <button type="submit"
