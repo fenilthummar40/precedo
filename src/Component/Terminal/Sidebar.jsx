@@ -70,7 +70,7 @@ function Sidebar() {
                 )}
             </div>
 
-            <div className='flex flex-col absolute bottom-4 w-full pr-2 gap-2'>
+            <div className='flex flex-col absolute bottom-4 w-full pr-4 gap-2'>
                 <Link to='#' className='flex items-center gap-3 p-2 rounded-md text-white hover:bg-slate-800'>
                     <IconPlus className='w-5 h-5'/>{isOpen && "New Chat"}
                 </Link>
